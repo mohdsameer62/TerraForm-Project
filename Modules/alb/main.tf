@@ -4,9 +4,9 @@ resource "aws_security_group" "alb_server_sg" {
   vpc_id      = var.vpc_id
 
   ingress {
-    description = "Allow HTTP from anywhere"
-    from_port   = 80
-    to_port     = 80
+    description = "Allow all anywhere"
+    from_port   = 0
+    to_port     = 0
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
