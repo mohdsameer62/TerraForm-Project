@@ -15,5 +15,5 @@ terraform {
 
 provider "aws" {
     region = var.availability_zone
-    profile = "sameer-terraform"
+    profile = "terra-admin-sameer"
 }
