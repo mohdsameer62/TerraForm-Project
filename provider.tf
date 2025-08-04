@@ -9,11 +9,11 @@ terraform {
     bucket         = "my-terraform-state-file-backend"
     key            = "network/terraform.tfstate"
     region         = "ap-south-1"
-    dynamodb_table = "terraform-locks"
+    dynamodb_table = "terraform-locks-tf-state"
   }
 }
 
 provider "aws" {
     region = var.availability_zone
-    profile = "terra-admin-sameer"
+    profile = "aws-terraform-admin"
 }
